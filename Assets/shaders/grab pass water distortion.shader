@@ -42,7 +42,7 @@
             	float2 disp = tex2D(_DisplaceTex,animcoords);
             	disp = ((disp * 2) - 1)*0.1;
             	float4 coords = i.grabPos+float4(disp,0,1);
-            	float4 color = tex2Dproj(_BackgroundTexture,UNITY_PROJ_COORD(coords));
+            	float4 color = tex2D(_BackgroundTexture,UNITY_PROJ_COORD(coords));
             	return color;
             }
             ENDCG

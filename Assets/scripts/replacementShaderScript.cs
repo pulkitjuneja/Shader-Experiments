@@ -3,7 +3,7 @@ using System.Collections;
 
 public class replacementShaderScript : MonoBehaviour {
 
-	public Shader replacemntSahder ;
+	public Shader replacemntShader ;
 	public bool replace = false;
 
 	void OnEnable() {
@@ -11,8 +11,8 @@ public class replacementShaderScript : MonoBehaviour {
 	}
 
 	public void setreplacemnetShader(){
-		if(replacemntSahder!=null){
-			GetComponent<Camera> ().SetReplacementShader (replacemntSahder, "RenderType");
+		if(replacemntShader!=null){
+			GetComponent<Camera> ().SetReplacementShader (replacemntShader, "RenderType");
 		}
 	}
 
